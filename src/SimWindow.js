@@ -18,7 +18,7 @@ class SimWindow extends Component{
     this.setState({
       [id] : +value
     })
-    console.log(this.state.population)
+    //console.log(this.state.population)
   }
 
   render(){
