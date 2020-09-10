@@ -67,10 +67,10 @@ export default (p) => {
       }
     }
 
-    p.mousePressed = () => {
-      console.log(p.frameRate(), w, population)
-      // p.reset()
-    }
+    // p.mousePressed = () => {
+    //   console.log(p.frameRate(), w, population)
+    //   // p.reset()
+    // }
 
     class Person{
       constructor(infected){
