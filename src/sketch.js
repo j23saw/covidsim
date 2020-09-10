@@ -62,7 +62,9 @@ export default (p) => {
     }
 
     p.windowResized = () => {
-      p.resizeCanvas(p.displayWidth, p.displayWidth);
+      if(p.displayWidth < 500){
+        p.resizeCanvas(p.displayWidth, p.displayWidth);
+      }
     }
 
     p.mousePressed = () => {
@@ -79,7 +81,7 @@ export default (p) => {
       }
         
       show(){
-          this.infected? p.fill(255, 0, 0):p.fill(0,255,0)
+          this.infected? p.fill(255, 0, 0):p.fill(0,255,200)
           p.noStroke()
           p.ellipse(this.pos.x, this.pos.y, size)
       }
