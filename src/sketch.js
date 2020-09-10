@@ -5,10 +5,10 @@ export default (p) => {
     let w = [];
     let population
     let infPercent
-    let size = p.displayWidth/200
+    let size = p.displayWidth/190
     let minInfDist
     let speed
-    let testRange = 2*size
+    let testRange = 1.5*size
     p.setup = () => {
       p.createCanvas(600,600);
     }
@@ -31,7 +31,7 @@ export default (p) => {
     }
 
     p.draw = () => {
-      p.background(220);
+      p.background(50);
       let city = new Rectangle(p.width/2, p.height/2, p.width, p.height)
       let hotspots = new QuadTree(city, 4)
       for(let wanderer of w){
@@ -81,7 +81,7 @@ export default (p) => {
       }
         
       show(){
-          this.infected? p.fill(255, 0, 0):p.fill(0,255,200)
+          this.infected? p.fill(255, 125, 0):p.fill(6, 224, 17)
           p.noStroke()
           p.ellipse(this.pos.x, this.pos.y, size)
       }
