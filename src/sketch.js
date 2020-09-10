@@ -61,6 +61,10 @@ export default (p) => {
       }
     }
 
+    p.windowResized = () => {
+      p.resizeCanvas(p.displayWidth, p.displayWidth);
+    }
+
     p.mousePressed = () => {
       console.log(p.frameRate(), w, population)
       // p.reset()
