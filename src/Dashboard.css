@@ -7,6 +7,9 @@
 }
 
 .Window {
+    display: flex;
+    flex-basis: 600px;
+    flex-shrink: 0;
     margin: 1rem;
     border: solid;
     border-color: #2e5874;

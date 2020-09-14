@@ -9,8 +9,12 @@ export default (p) => {
     let minInfDist
     let speed
     let testRange = 1.5*size
+    let mobWidth = (window.screen.availWidth - (8*2*2));
+    let mobHeight = Math.floor(mobWidth * (3/4));
+    let simCanvasSize = ( window.screen.availWidth > 672 ) ?
+       { width: 600, height: 600 } : { width: mobWidth, height: mobHeight };
     p.setup = () => {
-      p.createCanvas(600,600);
+      p.createCanvas(simCanvasSize.width, simCanvasSize.height);
     }
 
     p.reset = () => {
@@ -58,12 +62,6 @@ export default (p) => {
           p.props.mid !== minInfDist  )
         {
         p.reset()
-      }
-    }
-
-    p.windowResized = () => {
-      if(p.displayWidth < 500){
-        p.resizeCanvas(p.displayWidth, p.displayWidth);
       }
     }
 
