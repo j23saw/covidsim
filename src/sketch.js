@@ -11,10 +11,10 @@ export default (p) => {
     let testRange = 1.5*size
     let mobWidth = (window.screen.availWidth - (8*2*2));
     let mobHeight = mobWidth;
-    let simCanvasSize = ( window.screen.availWidth > 1080) ?
+    let simCanvasSize = ( window.screen.availWidth > 360) ?
        { width: 600, height: 600 } : { width: mobWidth, height: mobHeight };
     p.setup = () => {
-      p.createCanvas(600, 600);
+      p.createCanvas(simCanvasSize.width, simCanvasSize.height);
     }
 
     p.reset = () => {
