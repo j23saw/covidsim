@@ -26,6 +26,8 @@
 
 @media (min-width: 360px){
     .Window {
+        display: flex;
+        flex-shrink:0;
         margin: 1rem;
         border: solid;
         border-radius: 0.5rem;
