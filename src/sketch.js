@@ -9,9 +9,9 @@ export default (p) => {
     let minInfDist
     let speed
     let testRange = 1.5*size
-    let mobWidth = (screen.availWidth - (8*2*2));
+    let mobWidth = (window.screen.availWidth - (8*2*2));
     let mobHeight = Math.floor(mobWidth * (3/4));
-    let simCanvasSize = ( screen.availWidth > 672 ) ?
+    let simCanvasSize = ( window.screen.availWidth > 672 ) ?
        { width: 640, height: 480 } : { width: mobWidth, height: mobHeight };
     p.setup = () => {
       p.createCanvas(simCanvasSize.width, simCanvasSize.height);
@@ -92,12 +92,12 @@ export default (p) => {
           this.vel.add(this.acc)
           this.vel.limit(speed)
           this.pos.add(this.vel)
-          if(p.mouseIsPressed){
-              p.push()
-              p.translate(this.pos.x, this.pos.y)
-              p.line(0,0, this.vel.x*10, this.vel.y*10)
-              p.pop()
-          }
+          // if(p.mouseIsPressed){
+          //     p.push()
+          //     p.translate(this.pos.x, this.pos.y)
+          //     p.line(0,0, this.vel.x*10, this.vel.y*10)
+          //     p.pop()
+          // }
           
           if(this.pos.x < 2){
               
