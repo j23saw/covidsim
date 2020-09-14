@@ -31,7 +31,7 @@ export default (p) => {
     }
 
     p.draw = () => {
-      p.background(50);
+      p.background(30, 41, 46);
       let city = new Rectangle(p.width/2, p.height/2, p.width, p.height)
       let hotspots = new QuadTree(city, 4)
       for(let wanderer of w){

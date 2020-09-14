@@ -1,7 +1,25 @@
 .Dashboard {
     display: flex;
-    flex-direction: row;
+    flex-wrap:wrap;
     justify-content: space-evenly;
-    flex-wrap: wrap;
-    
+    align-items: flex-start;
+    background-color: #222f36;
+}
+
+.Window {
+    margin: 1rem;
+    border: solid;
+    border-color: #2e5874;
+    border-radius:0.75rem;
+    height: 600px;
+    overflow: hidden;
+}
+
+.Controls {
+    margin: 1rem;
+    border: solid;
+    padding: 1rem;
+    color: #bbe1fa;
+    border-color: #2e5874;
+    border-radius:1rem
 }

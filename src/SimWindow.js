@@ -24,15 +24,17 @@ class SimWindow extends Component{
   render(){
     return(
       <div className="Dashboard">
-        <P5Wrapper
-          p5Props = {{
-            pop: this.state.population,
-            inf: this.state.infPercent,
-            speed: this.state.speed,
-            mid: this.state.minInfDist
-          }}
-        />
-        <div>
+        <div className = "Window">
+          <P5Wrapper
+            p5Props = {{
+              pop: this.state.population,
+              inf: this.state.infPercent,
+              speed: this.state.speed,
+              mid: this.state.minInfDist
+            }}
+          />
+        </div>
+        <div className = "Controls">
           <div>
             <label for = "population">Population:</label><br></br>
             <input 

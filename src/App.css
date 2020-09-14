@@ -1,8 +1,8 @@
-.App > h1{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
+.App > .title > h1 {
+  background-color: #1b262c;
+  color: #bbe1fa;
+  margin: 0;
+  padding: 1rem;
 }
 
 

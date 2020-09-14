@@ -5,10 +5,14 @@ import SimWindow from './SimWindow';
 function App() {
   return (
     <div className="App">
-      <h1>
-        CovidSim
-      </h1>
-      <SimWindow /> 
+      <div className="title">
+        <h1>
+          CovidSim
+        </h1>
+      </div>
+      <div className = "SimWindow">
+        <SimWindow /> 
+      </div>
     </div>
   );
 }
