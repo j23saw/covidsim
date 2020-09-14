@@ -24,10 +24,7 @@
     border-radius:1rem
 }
 
-@media screen 
-  and (device-width: 360px) 
-  and (-webkit-device-pixel-ratio: 3) 
-  and (orientation: portrait) {
+@media (min-width: 360px){
     .Window {
         margin: 1rem;
         border: solid;
