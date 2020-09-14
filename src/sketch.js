@@ -76,7 +76,7 @@ export default (p) => {
     //   // p.reset()
     // }
 
-    class Person{
+    class Person {
       constructor(infected){
           this.pos = new p5.Vector(p.random(p.width), p.random(p.height))
           this.vel = new p5.Vector(0,0)
