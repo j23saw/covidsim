@@ -11,7 +11,7 @@ export default (p) => {
     let testRange = 1.5*size
     let mobWidth = (window.screen.availWidth - (8*2*2));
     let mobHeight = mobWidth;
-    let simCanvasSize = ( window.screen.availWidth > 500 ) ?
+    let simCanvasSize = ( window.screen.availWidth > 1080) ?
        { width: 600, height: 600 } : { width: mobWidth, height: mobHeight };
     p.setup = () => {
       p.createCanvas(600, 600);
@@ -65,11 +65,11 @@ export default (p) => {
       }
     }
 
-    p.windowResized = () => {
-      if(p.displayWidth < 500){
-        p.resizeCanvas(p.displayWidth, p.displayWidth);
-      }
-    }
+    // p.windowResized = () => {
+    //   if(p.displayWidth < 500){
+    //     p.resizeCanvas(p.displayWidth, p.displayWidth);
+    //   }
+    // }
 
     // p.mousePressed = () => {
     //   console.log(p.frameRate(), w, population)
