@@ -9,10 +9,10 @@ export default (p) => {
     let minInfDist
     let speed
     let testRange = 1.5*size
-    let mobWidth = window.screen.availWidth + 50;
-    let mobHeight = mobWidth;
-    let simCanvasSize = ( window.screen.availWidth > 350 ) ?
-       { width: 600, height: 600 } : { width: mobWidth, height: mobHeight };
+    let mobWidth = (screen.availWidth - (8*2*2));
+    let mobHeight = Math.floor(mobWidth * (3/4));
+    let simCanvasSize = ( screen.availWidth > 672 ) ?
+       { width: 640, height: 480 } : { width: mobWidth, height: mobHeight };
     p.setup = () => {
       p.createCanvas(simCanvasSize.width, simCanvasSize.height);
     }
