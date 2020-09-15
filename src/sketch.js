@@ -65,11 +65,11 @@ export default (p) => {
       }
     }
 
-    // p.windowResized = () => {
-    //   if(p.displayWidth < 500){
-    //     p.resizeCanvas(p.displayWidth, p.displayWidth);
-    //   }
-    // }
+    p.windowResized = () => {
+      if(p.displayWidth <= 360){
+        p.resizeCanvas(p.displayWidth, p.displayWidth);
+      }
+    }
 
     // p.mousePressed = () => {
     //   console.log(p.frameRate(), w, population)
