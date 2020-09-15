@@ -5,16 +5,17 @@ export default (p) => {
     let w = [];
     let population
     let infPercent
-    let size = p.displayWidth/190
+    let size = p.windowWidth/190
     let minInfDist
     let speed
     let testRange = 1.5*size
-    let mobWidth = (window.screen.availWidth - (8*2*2));
-    let mobHeight = mobWidth;
-    let simCanvasSize = ( window.screen.availWidth >= 672) ?
-       { width: 600, height: 600 } : { width: mobWidth, height: mobHeight };
+    // let mobWidth = (window.screen.availWidth - (8*2*2));
+    // let mobHeight = mobWidth;
+    // let simCanvasSize = ( window.screen.availWidth >= 672) ?
+    //    { width: 600, height: 600 } : { width: mobWidth, height: mobHeight };
     p.setup = () => {
-      p.createCanvas(simCanvasSize.width, simCanvasSize.height);
+      // p.createCanvas(simCanvasSize.width, simCanvasSize.height);
+      p.createCanvas(600,600);
     }
 
     p.reset = () => {
@@ -66,8 +67,8 @@ export default (p) => {
     }
 
     p.windowResized = () => {
-      if(p.displayWidth <= 360){
-        p.resizeCanvas(p.displayWidth, p.displayWidth);
+      if(p.displayWidth <= 450){
+        p.resizeCanvas(350, 350);
       }
     }
 

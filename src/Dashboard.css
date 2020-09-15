@@ -24,7 +24,7 @@
     border-radius: 0.5rem
 }
 
-@media (max-width: 360px){
+@media (max-width: 450px){
     .Window {
         margin: 1rem;
         border: solid;
@@ -32,13 +32,13 @@
         border-color: #537e9b; 
         overflow: hidden;
         background-color: rgb(30, 41, 46);
-        width:300px;
-        height: 300px;
+        width:350px;
+        height: 350px;
     }
 
     .Window > div > canvas {
-        width:300px;
-        height:300px;
+        width:350px;
+        height:350px;
     }
 }
 
