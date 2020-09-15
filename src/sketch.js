@@ -16,6 +16,15 @@ export default (p) => {
     p.setup = () => {
       // p.createCanvas(simCanvasSize.width, simCanvasSize.height);
       p.createCanvas(600,600);
+      if(p.displayWidth <= 450){
+        p.resizeCanvas(340, 340);
+      }
+    }
+
+    p.windowResized = () => {
+      if(p.displayWidth <= 450){
+        p.resizeCanvas(340, 340);
+      }
     }
 
     p.reset = () => {
@@ -66,11 +75,7 @@ export default (p) => {
       }
     }
 
-    p.windowResized = () => {
-      if(p.displayWidth <= 450){
-        p.resizeCanvas(350, 350);
-      }
-    }
+
 
     // p.mousePressed = () => {
     //   console.log(p.frameRate(), w, population)
