@@ -5,7 +5,8 @@ export default (p) => {
     let w = [];
     let population
     let infPercent
-    let size = p.windowWidth/190
+    let scale = p.displayWidth/p.displayHeight
+    let size = scale*4
     let minInfDist
     let speed
     let testRange = 1.5*size
