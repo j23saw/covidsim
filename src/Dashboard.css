@@ -1,9 +1,9 @@
 .Dashboard {
     display: flex;
     flex-wrap:wrap;
-    justify-content: space-evenly;
-    align-items: flex-start;
-    background-color: #222f36;
+    justify-content: center;
+    align-items: center;
+    /* background-color: #222f36; inherit from index.css */
 }
 
 .Window {
@@ -18,13 +18,52 @@
 .Controls {
     margin: 1rem;
     border: solid;
-    padding: 1rem;
+    padding: 1rem 1rem .5rem 1rem;
     color: #bbe1fa;
     border-color: #537e9b;
-    border-radius: 0.5rem
+    border-radius: 0.5rem;
+    width: 500px;
 }
 
-@media (max-width: 450px){
+.Controls > div {
+    border:  1px solid rgba(255, 255, 255, 0.397);
+    border-radius: 0.4em;
+    margin-bottom: 10px;
+    padding: 10px 20px;
+    color: #fff;
+}
+
+.Controls > div > label {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: -10px;
+}
+
+.Controls > div > input {
+    margin: 0 0 15px 0;
+    -webkit-appearance: none;
+    width: 100%;
+    height: 2px;
+    background: #ffffff;
+    outline: none;
+}
+
+.Controls input::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: #ffffff;
+    cursor: pointer;
+}
+
+@media (max-width: 600px){
+    .Controls {
+        width: 100vw;
+    }
+  
     .Window {
         margin: 1rem;
         border: solid;
@@ -32,13 +71,13 @@
         border-color: #537e9b; 
         overflow: hidden;
         background-color: rgb(30, 41, 46);
-        width:340px;
-        height: 340px;
+        width: 100%;
+        height: 100%;
     }
 
     .Window > div > canvas {
-        width:340px;
-        height:340px;
+        width: 100% !important;
+        height: 100% !important;
     }
 }
 

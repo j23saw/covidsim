@@ -36,7 +36,7 @@ class SimWindow extends Component{
         </div>
         <div className = "Controls">
           <div>
-            <label for = "population">Population:</label><br></br>
+            <label for = "population"><span>Population</span>{this.state.population}</label><br></br>
             <input 
               type="range" 
               id= "population" 
@@ -47,29 +47,29 @@ class SimWindow extends Component{
             />
           </div>
           <div>
-            <label for = "infPercent">Infected Percentage:</label><br></br>
+            <label for = "infPercent"><span>Infected Percentage</span>{Math.round(this.state.infPercent)}%</label><br></br>
             <input 
               type="range" 
               id= "infPercent" 
               value={this.state.infPercent} 
               min="0.01" 
-              max="10"
+              max="10.01"
               onChange = {this.handleChange}
             />
           </div>
           <div>                        
-            <label for = "speed">Speed:</label><br></br>
+            <label for = "speed"><span>Speed</span>{Math.round(this.state.speed)}</label><br></br>
             <input 
               type="range" 
               id= "speed"
               value={this.state.speed} 
               min="0.1" 
-              max="10"
+              max="10.1"
               onChange = {this.handleChange}
             />
           </div>
           <div>                        
-            <label for = "minInfDist">Minimum Infection Distance:</label><br></br>
+            <label for = "minInfDist"><span>Minimum Infection Distance</span>{this.state.minInfDist}</label><br></br>
             <input 
               type="range" 
               id= "minInfDist" 
