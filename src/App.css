@@ -4,7 +4,7 @@
   background-color: #1b262c;
   color: #bbe1fa;
   margin: 0px;
-  padding: 0rem 11%;
+  padding: 0rem 10%;
   justify-content: space-between;
   align-items: center;
 }
@@ -12,8 +12,18 @@
 .navbar > h1 {
   margin:0.5rem;
 }
+
 @media (max-width: 600px){
-  
+  .App > .navbar {
+    display: flex;
+    flex-direction: row;
+    background-color: #1b262c;
+    color: #bbe1fa;
+    margin: 0px;
+    padding: 0rem 3%;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
 
 
