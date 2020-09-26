@@ -1,9 +1,36 @@
-.App > .title > h1 {
+.App > header {
   background-color: #1b262c;
   color: #bbe1fa;
-  margin: 0;
-  padding: 1rem;
+  position: absolute;
+  width:100%;
+  top: 0;
 }
+
+.App > header > .navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 12%;
+}
+
+.navbar > nav > ul {
+  list-style: none;
+}
+
+
+.navbar > h1 {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.SimWindow {
+  margin-top: 4rem;
+  padding-top: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 
 
 

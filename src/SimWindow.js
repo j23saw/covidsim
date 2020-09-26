@@ -4,7 +4,7 @@ import P5Wrapper from "./P5Wrapper"
 
 class SimWindow extends Component{
   constructor(props){
-    super(props)
+    super()
     this.state = {
       population: 10,
       infPercent: 1,

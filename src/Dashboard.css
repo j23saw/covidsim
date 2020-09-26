@@ -4,6 +4,7 @@
     justify-content: center;
     align-items: center;
     /* background-color: #222f36; inherit from index.css */
+    color: #f8bbe6
 }
 
 .Window {
@@ -48,7 +49,7 @@
 
 .Controls > div > input {
     margin: 0 0 15px 0;
-    -webkit-appearance: none;
+    -webkit-appearance: media-volume-slider;
     width: 100%;
     height: 2px;
     background: #ffffff;
@@ -56,7 +57,7 @@
 }
 
 .Controls input::-webkit-slider-thumb {
-    -webkit-appearance: none;
+    -webkit-appearance: media-volume-slider;
     appearance: none;
     width: 15px;
     height: 15px;
