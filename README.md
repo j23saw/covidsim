@@ -1,2 +1,3 @@
-CovidSim: A Simple pandemic Simulator made with p5.js!
+# CovidSim
+A Simple pandemic Simulator made with p5.js!
 
