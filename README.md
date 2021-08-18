@@ -39,7 +39,7 @@ User Interface: The user inputs the quantity for each parameter through the rang
 Simulator: Two main algorithms run the simulator
 
 - Contact Detection Algorithm:
-    1. The algorithm is really simple, it just checks the straight-line distance between each pair of a green dot and an orange dot present in the simulation area using the formula **(d=√((x2-x1)²+(y2-y1)²), where (x1, y1) is the co-ordinate of a green-dot and (x2, y2) is the co-ordinate of an orange dot)** and if this distance is lesser than the Infection Radius set by the user, the green dot which has got in contact with an orange dot will update its status from safe to infected and turn into an orange dot.
+    1. The algorithm is really simple, it just checks the straight-line distance between each pair of a green dot and an orange dot present in the simulation area using the formula **(d=√((x<sub>2</sub>-x<sub>1</sub>)²+(y<sub>2</sub>-y<sub>1</sub>)²), where (x1, y1) is the co-ordinate of a green-dot and (x2, y2) is the co-ordinate of an orange dot)** and if this distance is lesser than the Infection Radius set by the user, the green dot which has got in contact with an orange dot will update its status from safe to infected and turn into an orange dot.
     2. To make this algorithm efficient, I've implemented the Quadtree data structure due to which the program only needs to check the distance between the nearby infected dots and not the faraway infected dots which makes the simulator run much faster.
 - Random Movement Generation Algorithm:
     1. Each dot is made to move randomly in the simulation to mimic the natural movement of people in real life. I've implemented this using the 2D Vector Math functionality provided by the p5.js library.
