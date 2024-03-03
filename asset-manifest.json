@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/covidsim/static/css/main.0a7f6686.chunk.css",
+    "main.js": "/covidsim/static/js/main.8105e0fe.chunk.js",
+    "main.js.map": "/covidsim/static/js/main.8105e0fe.chunk.js.map",
+    "runtime-main.js": "/covidsim/static/js/runtime-main.db397632.js",
+    "runtime-main.js.map": "/covidsim/static/js/runtime-main.db397632.js.map",
+    "static/js/2.864ce3d7.chunk.js": "/covidsim/static/js/2.864ce3d7.chunk.js",
+    "static/js/2.864ce3d7.chunk.js.map": "/covidsim/static/js/2.864ce3d7.chunk.js.map",
+    "index.html": "/covidsim/index.html",
+    "precache-manifest.29cc004f6cfccaa0c7a047efad6a1f2e.js": "/covidsim/precache-manifest.29cc004f6cfccaa0c7a047efad6a1f2e.js",
+    "service-worker.js": "/covidsim/service-worker.js",
+    "static/css/main.0a7f6686.chunk.css.map": "/covidsim/static/css/main.0a7f6686.chunk.css.map",
+    "static/js/2.864ce3d7.chunk.js.LICENSE.txt": "/covidsim/static/js/2.864ce3d7.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.db397632.js",
+    "static/js/2.864ce3d7.chunk.js",
+    "static/css/main.0a7f6686.chunk.css",
+    "static/js/main.8105e0fe.chunk.js"
+  ]
+}
