@@ -1,7 +1,7 @@
 
 # CovidSim
 
-https://covidsim.herokuapp.com/
+(https://j23saw.github.io/covidsim/)
 
 A simple web-based pandemic simulator where you can play with different parameters and study the spread of any viral disease. Since the COVID-19 outbreak was so viral, I thought if I could model the spread of the virus depending on various parameters such as:
 
